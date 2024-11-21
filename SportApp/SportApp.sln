@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.34301.259
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SportApp", "SportApp\SportApp.csproj", "{53EF04ED-43DE-43FD-AA4F-60611173783E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{53EF04ED-43DE-43FD-AA4F-60611173783E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{53EF04ED-43DE-43FD-AA4F-60611173783E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{53EF04ED-43DE-43FD-AA4F-60611173783E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{53EF04ED-43DE-43FD-AA4F-60611173783E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {40AE8219-995E-47BF-9AF4-CA7C192B2E61}
+	EndGlobalSection
+EndGlobal
