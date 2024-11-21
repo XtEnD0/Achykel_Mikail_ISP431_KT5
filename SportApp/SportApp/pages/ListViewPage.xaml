@@ -17,6 +17,28 @@
         <ListView x:Name="MainListView" Grid.Row="0">
             <ListView.ItemTemplate>
                 <DataTemplate>
+
+                    <Grid Width="950">
+                        <StackPanel HorizontalAlignment="Left"
+                                    VerticalAlignment="Center"
+                                    Margin="10,10,0,10">
+                            <TextBlock Text="{Binding Name, StringFormat={}ФИО: {0} }"></TextBlock>
+                            <TextBlock Text="{Binding Email, StringFormat={}Email: {0} }"></TextBlock>
+                            <TextBlock Text="{Binding BirthDate, StringFormat={}Дата рождения: {0:yyyy-MM-dd} }"></TextBlock>
+                            <TextBlock Text="{Binding Number, StringFormat={}Номер телефона: {0} }"></TextBlock>
+                            
+                            
+                        </StackPanel>
+
+                        <TextBlock Text="{Binding Role.RoleName, StringFormat={}{0} }"
+                                   VerticalAlignment="Center" HorizontalAlignment="Center"></TextBlock>
+                        <Button x:Name="EditButton" Click="EditButton_Click" Margin="0,0,20,0"
+                                Content="Изменить"
+                                VerticalAlignment="Center" HorizontalAlignment="Right"></Button>
+
+
+                    </Grid>
+                    
                     
                 </DataTemplate>
             </ListView.ItemTemplate>

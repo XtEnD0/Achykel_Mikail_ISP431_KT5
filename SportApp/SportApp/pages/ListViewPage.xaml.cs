@@ -23,6 +23,8 @@ namespace SportApp.pages
         public ListViewPage()
         {
             InitializeComponent();
+            MainListView.ItemsSource = data.SportsEntities.GetContext().Users.ToList();
+
         }
 
         private void BackButton_Click(object sender, RoutedEventArgs e)
@@ -37,6 +39,11 @@ namespace SportApp.pages
         private void AddButton_Click(object sender, RoutedEventArgs e)
         {
             Classes.Manager.MainFrame.Navigate(new pages.AddEditPage());
+        }
+
+        private void EditButton_Click(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }

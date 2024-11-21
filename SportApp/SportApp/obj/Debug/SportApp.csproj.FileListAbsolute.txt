@@ -20,3 +20,10 @@ C:\Users\comcuru\Desktop\KT_5_Achykel\SportApp\SportApp\obj\Debug\SportApp.cspro
 C:\Users\comcuru\Desktop\KT_5_Achykel\SportApp\SportApp\obj\Debug\SportApp.csproj.CoreCompileInputs.cache
 C:\Users\comcuru\Desktop\KT_5_Achykel\SportApp\SportApp\obj\Debug\SportApp.exe
 C:\Users\comcuru\Desktop\KT_5_Achykel\SportApp\SportApp\obj\Debug\SportApp.pdb
+C:\Users\comcuru\Desktop\KT_5_Achykel\SportApp\SportApp\bin\Debug\EntityFramework.dll
+C:\Users\comcuru\Desktop\KT_5_Achykel\SportApp\SportApp\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\comcuru\Desktop\KT_5_Achykel\SportApp\SportApp\bin\Debug\EntityFramework.xml
+C:\Users\comcuru\Desktop\KT_5_Achykel\SportApp\SportApp\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\comcuru\Desktop\KT_5_Achykel\SportApp\SportApp\bin\Debug\ru\EntityFramework.resources.dll
+C:\Users\comcuru\Desktop\KT_5_Achykel\SportApp\SportApp\obj\Debug\SportApp_Content.g.cs
+C:\Users\comcuru\Desktop\KT_5_Achykel\SportApp\SportApp\obj\Debug\SportApp.csproj.CopyComplete
