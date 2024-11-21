@@ -24,5 +24,13 @@ namespace SportApp.pages
         {
             InitializeComponent();
         }
+
+        private void BackButton_Click(object sender, RoutedEventArgs e)
+        {
+            if (Classes.Manager.MainFrame.CanGoBack == true)
+            {
+                Classes.Manager.MainFrame.GoBack();
+            }
+        }
     }
 }
