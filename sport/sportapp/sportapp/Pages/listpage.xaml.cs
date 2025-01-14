@@ -23,6 +23,20 @@ namespace sportapp.Pages
         public listpage()
         {
             InitializeComponent();
+            mainListView.ItemsSource = Data.SportsEntities.GetContext().users.ToList();
+        }
+
+        private void BackButton_Click(object sender, RoutedEventArgs e)
+        {
+            if (Classes.manager.MainFrame.CanGoBack)
+            {
+                Classes.manager.MainFrame.GoBack();
+            }
+        }
+
+        private void AddButton_Click(object sender, RoutedEventArgs e)
+        {
+            Classes.manager.MainFrame.Navigate(new Pages.addeditpage());
         }
     }
 }

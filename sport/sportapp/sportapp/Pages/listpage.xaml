@@ -5,10 +5,59 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:sportapp.Pages"
       mc:Ignorable="d" 
-      d:DesignHeight="450" d:DesignWidth="800"
-      Title="listpage">
+      d:DesignHeight="570" d:DesignWidth="1000"
+      Title="страница списка">
 
     <Grid>
-        
+        <Grid.RowDefinitions>
+            <RowDefinition Height="500"></RowDefinition>
+            <RowDefinition></RowDefinition>
+
+        </Grid.RowDefinitions>
+        <ListView x:Name="mainListView" Grid.Row="0">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            
+                            <ColumnDefinition Width="250"></ColumnDefinition>
+                            <ColumnDefinition Width="150"></ColumnDefinition>
+                            <ColumnDefinition Width="550"></ColumnDefinition>
+
+                        </Grid.ColumnDefinitions>
+                        <Grid Grid.Column="0" Height="80">
+                            <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+                                <TextBlock Text="{Binding Name, StringFormat={}{0}}"></TextBlock>
+                                <TextBlock Text="{Binding Email, StringFormat={}Email: {0}}"></TextBlock>
+                                <TextBlock Text="{Binding BirthDate, StringFormat={}Date of Birth: {0:yyyy-MM-dd}}"></TextBlock>
+                                <TextBlock Text="{Binding Phone, StringFormat={}Phone number: {0}}"></TextBlock>
+                            </StackPanel>
+                        </Grid>
+
+                        <Grid Grid.Column="1">
+                            <TextBlock Text="{Binding roles.RoleName}" VerticalAlignment="Center"
+                                       HorizontalAlignment="Center" Margin="10,0,0,0"></TextBlock>
+                            
+                            
+                        </Grid>
+
+                        <Button Grid.Column="2" Content="Edit" HorizontalAlignment="Right" Margin="0,0,10,0"
+                                x:Name="editbutt" Height="25"></Button>
+                        
+                        
+                    </Grid>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+
+        <Grid Grid.Row="1" Background="#FFEAEAEA">
+            <Button x:Name="BackButton" Content="Back"
+                    VerticalAlignment="Center" HorizontalAlignment="Left"
+                    Margin="20,0,0,0" Click="BackButton_Click"></Button>
+            
+            <Button x:Name="AddButton" Content="Add"
+                    VerticalAlignment="Center" HorizontalAlignment="Right"
+                    Margin="0,0,20,0" Click="AddButton_Click"></Button>
+        </Grid>
     </Grid>
 </Page>

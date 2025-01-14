@@ -5,10 +5,44 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:sportapp.Pages"
       mc:Ignorable="d" 
-      d:DesignHeight="450" d:DesignWidth="800"
+      d:DesignHeight="650" d:DesignWidth="1000"
       Title="addeditpage">
 
     <Grid>
-        
+        <Grid.RowDefinitions>
+            <RowDefinition ></RowDefinition>
+            <RowDefinition Height="30"></RowDefinition>
+        </Grid.RowDefinitions>
+
+        <Grid Grid.Row="0">
+            <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+                
+                <TextBox x:Name="NameTB" Height="25" Width="300" Text="Full Name" FontSize="15"></TextBox>
+                <ComboBox x:Name="RoleTB" Height="25" Width="300" Margin="0,20,0,0" FontSize="15"
+                          ItemsSource="{Binding RoleName, StringFormat={}{0}}"></ComboBox>
+                <TextBox x:Name="BirthDateTB" Height="25" Width="300" Margin="0,20,0,0" Text="Date of Birth" FontSize="15"></TextBox>
+                <TextBox x:Name="PhoneTB" Height="25" Width="300" Margin="0,20,0,0" Text="Phone Number" FontSize="15"></TextBox>
+                <ComboBox x:Name="SexTB" Height="25" Width="300" Margin="0,20,0,0" FontSize="15"
+                          ItemsSource="{Binding Gender, StringFormat={}{0}}"></ComboBox>
+                <TextBox x:Name="EmailTB" Height="25" Width="300" Margin="0,20,0,0" Text="Email" FontSize="15"></TextBox>
+                <TextBox x:Name="LoginTB" Height="25" Width="300" Margin="0,20,0,0" Text="Login" FontSize="15"></TextBox>
+                <Label Content="Password:" HorizontalAlignment="Center" FontSize="15" Margin="0,10,0,0" ></Label>
+                <PasswordBox x:Name="PasPB" Height="25" Width="300" Margin="0,0,0,0" FontSize="15"></PasswordBox>
+                <Label Content="Confirm Password:" HorizontalAlignment="Center" FontSize="15" Margin="0,10,0,0" ></Label>
+                <PasswordBox x:Name="CPasPB" Height="25" Width="300" Margin="0,0,0,0" FontSize="15" ></PasswordBox>
+
+            </StackPanel>
+        </Grid>
+
+        <Grid Grid.Row="1" Background="#FFEAEAEA">
+            <Button x:Name="BackButton" Content="Back"
+                    VerticalAlignment="Center" HorizontalAlignment="Left"
+                    Margin="20,0,0,0" Click="BackButton_Click"></Button>
+
+            <Button x:Name="AddButton" Content="Save"
+                    VerticalAlignment="Center" HorizontalAlignment="Right"
+                    Margin="0,0,20,0" Click="SaveButton_Click"></Button>
+        </Grid>
+
     </Grid>
 </Page>

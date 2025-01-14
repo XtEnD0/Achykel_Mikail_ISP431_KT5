@@ -23,6 +23,21 @@ namespace sportapp.Pages
         public addeditpage()
         {
             InitializeComponent();
+            SexTB.ItemsSource = Data.SportsEntities.GetContext().sex.ToList();
+            RoleTB.ItemsSource = Data.SportsEntities.GetContext().roles.ToList();
         }
+        private void BackButton_Click(object sender, RoutedEventArgs e)
+        {
+            if (Classes.manager.MainFrame.CanGoBack)
+            {
+                Classes.manager.MainFrame.GoBack();
+            }
+        }
+
+        private void SaveButton_Click(object sender, RoutedEventArgs e)
+        {
+            
+        }
+
     }
 }
