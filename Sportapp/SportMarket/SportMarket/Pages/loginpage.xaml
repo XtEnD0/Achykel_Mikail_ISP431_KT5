@@ -20,7 +20,7 @@
                 <TextBox x:Name="LoginTextBox" Width="200" Height="25" FontSize="17" Margin="0,5,0,0"></TextBox>
                 <Label Content="Password:" HorizontalAlignment="Center" FontSize="18" Margin="0,5,0,0"></Label>
                 <PasswordBox x:Name="PasPasBox" Width="200" Height="25" FontSize="14" Margin="0,5,0,0"></PasswordBox>
-                <Button x:Name="loginbutton" Content="Confirm" FontSize="15" Width="120" Height="25" Margin="0,15,0,0"></Button>
+                <Button x:Name="loginbutton" Click="loginbutton_Click" Content="Confirm" FontSize="15" Width="120" Height="25" Margin="0,15,0,0"></Button>
             </StackPanel>
             
             

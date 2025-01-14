@@ -24,5 +24,26 @@ namespace SportMarket.Pages
         {
             InitializeComponent();
         }
+
+        private void loginbutton_Click(object sender, RoutedEventArgs e)
+        {
+            StringBuilder err = new StringBuilder();
+            if (String.IsNullOrEmpty(LoginTextBox.Text))
+            {
+                err.AppendLine("Be sure you entered Login");
+            }
+            if (String.IsNullOrEmpty(PasPasBox.Password))
+            {
+                err.AppendLine("Be sure you entered Password");
+            }
+            if (err.Length > 0)
+            {
+                MessageBox.Show(err.ToString(),"Caution!", MessageBoxButton.OK, MessageBoxImage.Warning);
+            }
+            else
+            {
+                MessageBox.Show(" ","",MessageBoxButton.OK);
+            }
+        }
     }
 }
