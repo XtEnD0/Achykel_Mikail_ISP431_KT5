@@ -43,6 +43,7 @@ namespace SportMarket.Pages
             else
             {
                 MessageBox.Show(" ","",MessageBoxButton.OK);
+                Classes.manager.MainFrame.Navigate(new Pages.listpage());
             }
         }
     }
