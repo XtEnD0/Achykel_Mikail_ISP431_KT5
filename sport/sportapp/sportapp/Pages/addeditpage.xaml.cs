@@ -36,7 +36,31 @@ namespace sportapp.Pages
 
         private void SaveButton_Click(object sender, RoutedEventArgs e)
         {
-            
+            StringBuilder err = new StringBuilder();
+            if (String.IsNullOrEmpty(NameTB.Text) || NameTB.Text == "Full Name")
+            {
+                err.AppendLine("please enter the Full Name");
+            }
+            if (String.IsNullOrEmpty(BirthDateTB.Text) || BirthDateTB.Text == "Date of Birth")
+            {
+                err.AppendLine("please enter the Date of Birth");
+            }
+            if (String.IsNullOrEmpty(PhoneTB.Text) || PhoneTB.Text == "Phone Number")
+            {
+                err.AppendLine("please enter the Phone Number");
+            }
+            //if (String.IsNullOrEmpty(NameTB.Text) || NameTB.Text == "Full Name")
+            //{
+            //    err.AppendLine("please enter the Full Name");
+            //}
+            //if (String.IsNullOrEmpty(NameTB.Text) || NameTB.Text == "Full Name")
+            //{
+            //    err.AppendLine("please enter the Full Name");
+            //}
+            //if (String.IsNullOrEmpty(NameTB.Text) || NameTB.Text == "Full Name")
+            //{
+            //    err.AppendLine("please enter the Full Name");
+            //}
         }
 
     }
